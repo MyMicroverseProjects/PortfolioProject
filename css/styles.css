@@ -1,0 +1,26 @@
+/* General Styles from the udemy course:
+ * https://www.udemy.com/course/css-grid-y-flexbox-la-guia-definitiva-crea-10-proyectos/
+*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 4.8rem;
+  padding: 1rem 1.2rem;
+}
