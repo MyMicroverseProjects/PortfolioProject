@@ -13,9 +13,9 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 svg,
@@ -26,9 +26,15 @@ img {
 }
 
 .container {
-  padding: 0 2.4rem;
+  padding: 11.4rem 2.4rem;
 }
 
+h1,
+p {
+  margin: 0;
+}
+
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -55,4 +61,40 @@ img {
 .header .logo svg,
 .header .icon svg {
   /* width: 100%; */
+}
+
+/* MAIN INTRO */
+.container.containerIntro {
+  background-image: url("../images/heromobil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .container.containerIntro {
+    background-image: url("../images/hero.png");
+  }
+}
+
+section.intro > * {
+  margin-bottom: 1.2rem;
+}
+
+section.intro > *:last-child {
+  margin-bottom: 0;
+}
+
+section.intro h1 {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+section.intro .social-media {
+  display: inline-flex;
+}
+
+section.intro .social-media > * {
+  margin-right: 1.9rem;
 }
