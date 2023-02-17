@@ -31,9 +31,15 @@ img {
   margin: 0 auto;
 }
 
+ul,
 h1,
 p {
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 .bgc-white {
@@ -122,6 +128,13 @@ section.intro h1 > span {
   section.intro h1 > span:nth-of-type(3) {
     flex-basis: auto;
   }
+}
+
+section.intro h2 {
+  color: #7f8cff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
 section.intro .social-media {
