@@ -1,0 +1,12 @@
+.works {
+  display: grid;
+  justify-content: center;
+  margin-top: 11.4rem;
+}
+
+.works .work-card {
+  padding: 1.4rem;
+  background-color: #fff;
+  border: 1px #dfe1e6 solid;
+  border-radius: 1.6rem;
+}
