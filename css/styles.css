@@ -16,6 +16,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+  background-color: #e5e5e5;
 }
 
 svg,
@@ -33,6 +34,10 @@ img {
 h1,
 p {
   margin: 0;
+}
+
+.bgc-white {
+  background-color: white;
 }
 
 /* HEADER */
@@ -74,6 +79,7 @@ p {
   background-size: cover;
   padding-top: 11.4rem;
   padding-bottom: 11.4rem;
+  border-radius: 0 0 0 7.5rem;
 }
 
 @media (min-width: 600px) {
