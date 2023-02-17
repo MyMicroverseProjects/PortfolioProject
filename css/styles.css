@@ -1,0 +1,141 @@
+/* General Styles from the udemy course:
+ * https://www.udemy.com/course/css-grid-y-flexbox-la-guia-definitiva-crea-10-proyectos/
+*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+svg,
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  min-height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+}
+
+.header .logo,
+.header .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo {
+  padding: 1.1rem 1.2rem;
+}
+
+.header .icon {
+  flex-basis: 4rem;
+  padding: 0.8rem;
+}
+
+/* MAIN INTRO */
+.containerBgImage {
+  background-image: url("../images/heromobil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 11.4rem;
+  padding-bottom: 11.4rem;
+}
+
+@media (min-width: 600px) {
+  .containerBgImage {
+    background-image: url("../images/hero.png");
+  }
+}
+
+@media (min-width: 768px) {
+  section.intro {
+    width: 65%;
+  }
+}
+
+section.intro > * {
+  margin-bottom: 1.2rem;
+}
+
+section.intro > *:last-child {
+  margin-bottom: 0;
+}
+
+section.intro h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+section.intro h1 > span {
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  section.intro h1 > span:nth-of-type(2) {
+    flex-basis: auto;
+    margin-right: 1rem;
+  }
+
+  section.intro h1 > span:nth-of-type(3) {
+    flex-basis: auto;
+  }
+}
+
+section.intro h2 {
+  color: #7f8cff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+section.intro .social-media {
+  display: inline-flex;
+  align-items: center;
+}
+
+section.intro .social-media > * {
+  margin-right: 1.9rem;
+}
