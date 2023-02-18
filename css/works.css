@@ -79,7 +79,7 @@
   border-radius: 0.8rem;
 }
 
-.work-card a.btn {
+.dvbtn a.btn {
   font-size: 1.7rem;
   line-height: 2.4;
   padding: 1.2rem;
@@ -88,6 +88,6 @@
   border-radius: 0.8rem;
 }
 
-.work-card .dvbtn {
+.dvbtn {
   margin-top: 2.2rem;
 }
