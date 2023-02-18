@@ -46,6 +46,10 @@ ul {
   background-color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
 .header {
   display: flex;
