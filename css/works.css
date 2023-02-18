@@ -35,7 +35,7 @@
 
 .work-card .extra-info > span {
   font-weight: 600;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .work-card .extra-info > span:first-of-type {
@@ -77,17 +77,4 @@
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   border-radius: 0.8rem;
-}
-
-.dvbtn a.btn {
-  font-size: 1.7rem;
-  line-height: 2.4;
-  padding: 1.2rem;
-  color: #396df2;
-  border: 1px #6070ff solid;
-  border-radius: 0.8rem;
-}
-
-.dvbtn {
-  margin-top: 2.2rem;
 }
