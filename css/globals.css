@@ -44,13 +44,11 @@ ul {
   list-style: none;
 }
 
-.bgc-white {
-  background-color: white;
-}
-
 a {
   text-decoration: none;
 }
+
+/* UTILITIES */
 
 .btn {
   font-size: 1.7rem;
@@ -66,6 +64,10 @@ a {
   background-color: #396df2;
   color: #fff;
   cursor: pointer;
+}
+
+.bgc-white {
+  background-color: white;
 }
 
 .mt-1 {
