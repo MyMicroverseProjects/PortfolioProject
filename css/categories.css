@@ -58,10 +58,6 @@
 
 .drop-button .extra-menu {
   padding: 0 1.2rem;
-  display: none;
-}
-
-.drop-button:hover .extra-menu {
   display: block;
 }
 
@@ -73,7 +69,6 @@
   align-items: center;
   background-color: #f7f7f9;
   margin-bottom: 1.2rem;
-  transition: all 1s;
 }
 
 .drop-button .extra-menu li:last-child {
