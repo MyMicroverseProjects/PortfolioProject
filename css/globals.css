@@ -51,6 +51,7 @@ a {
 /* UTILITIES */
 
 .btn {
+  background-color: #fff;
   font-size: 1.7rem;
   line-height: 2.4;
   padding: 1.2rem;
