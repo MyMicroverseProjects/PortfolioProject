@@ -32,24 +32,66 @@
 
 /* MAIN INTRO */
 .containerBgImage {
-  background-image: url("../images/heromobil.png");
+  background-image: url("../images/bgCoverM.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding-top: 11.4rem;
   padding-bottom: 11.4rem;
   border-radius: 0 0 0 7.5rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 495px) {
+  .containerBgImage {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 917px) {
   .containerBgImage {
     background-image: url("../images/hero.png");
   }
 }
 
-@media (min-width: 768px) {
-  section.intro {
-    width: 65%;
+.bgImageIntro {
+  position: relative;
+  padding-top: 11.4rem;
+  padding-bottom: 11.4rem;
+}
+
+.bgImageIntro::before {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 117rem;
+  width: 105%;
+  position: absolute;
+  border-radius: 0 0 0 7.5rem;
+  right: -5%;
+  top: -8%;
+  z-index: -1;
+}
+
+@media (min-width: 765px) {
+  .bgImageIntro::before {
+    height: 110rem;
   }
+}
+
+@media (min-width: 855px) {
+  .bgImageIntro::before {
+    height: 114rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .bgImageIntro::before {
+    height: 117rem;
+  }
+}
+
+section.coverIntro {
+  padding-top: 11.4rem;
+  padding-bottom: 11.4rem;
 }
 
 section.intro > * {

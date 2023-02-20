@@ -1,23 +1,31 @@
-.contact-info {
+.contact-container {
   margin-top: 10.3rem;
   margin-bottom: 5rem;
   padding: 2.4rem;
   position: relative;
 }
 
-.contact-info::before {
+.contact-container::before {
   content: "";
   display: block;
-  height: 100rem;
+  height: 97rem;
   width: 112%;
   position: absolute;
   right: -8%;
-  top: -3%;
+  top: -10%;
   z-index: -1;
   margin: 0 1rem;
-  background-image: url("../images/form.png");
-  background-size: cover;
+  background-color: #6070ff;
+  border-radius: 9.8rem 0 0 0;
+  background-image: url("../images/bgCoverMDark.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 98% 1%;
+}
+
+.contact-info {
+  padding-top: 0;
+  padding-bottom: 5rem;
 }
 
 .contact-info > * {
@@ -25,14 +33,12 @@
   color: white;
 }
 
-.contact-info h1 {
+.contact-info h2 {
   font-weight: 700;
   font-size: 4rem;
   line-height: 1.3;
-  padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1.2rem;
-  margin-top: 11.2rem;
 }
 
 .contact-info p {
