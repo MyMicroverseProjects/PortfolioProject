@@ -8,7 +8,7 @@
 .contact-container::before {
   content: "";
   display: block;
-  height: 97rem;
+  height: 111rem;
   width: 112%;
   position: absolute;
   right: -8%;
@@ -17,10 +17,17 @@
   margin: 0 1rem;
   background-color: #6070ff;
   border-radius: 9.8rem 0 0 0;
-  background-image: url("../images/bgCoverMDark.svg");
+  background-image: url("../images/icon01.png"), url("../images/icon02.png"), url("../images/icon03.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 98% 1%;
+  background-position: 100% -1%, 24% 8%, 84% 86%;
+  background-size: 31%, 9%, 24%;
+}
+
+@media (min-width: 560px) {
+  .contact-container::before {
+    background-position: 100% 0%, 24% 8%, 80% 82%;
+    background-size: 25%, 7%, 22%;
+  }
 }
 
 .contact-info {
