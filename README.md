@@ -190,6 +190,12 @@ Example:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/alejandro-salazar-ba0ba7255/)
 - Mastodon: [Mastodon](https://uiuxdev.social/@xandrocastro)
 
+👤 **Muneeb UR Rehman**
+
+- GitHub: [@muneeb3123](https://github.com/muneeb3123)
+- Twitter: [@Hafizabd4](https://twitter.com/Hafizabd4)
+- LinkedIn: (https://www.linkedin.com/in/muneeb-rehman-01b6bb193/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
