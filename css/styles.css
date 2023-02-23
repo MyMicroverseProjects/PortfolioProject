@@ -1,35 +1,3 @@
-/* HEADER */
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  min-height: 4rem;
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding-top: 1.6rem;
-    padding-bottom: 1.6rem;
-  }
-}
-
-.header .logo,
-.header .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header .logo {
-  padding: 1.1rem 1.2rem;
-}
-
-.header .icon {
-  flex-basis: 4rem;
-  padding: 0.8rem;
-}
-
 /* MAIN INTRO */
 .containerBgImage {
   background-image: url("../images/bgCoverM.svg");
@@ -40,61 +8,29 @@
   border-radius: 0 0 0 7.5rem;
 }
 
-@media (min-width: 495px) {
-  .containerBgImage {
-    background-size: cover;
-  }
-}
-
-@media (min-width: 917px) {
-  .containerBgImage {
-    background-image: url("../images/hero.png");
-  }
-}
-
 .bgImageIntro {
   position: relative;
-  padding-top: 11.4rem;
-  padding-bottom: 11.4rem;
 }
 
 .bgImageIntro::before {
   content: "";
   display: block;
   background-color: white;
-  height: 117rem;
-  width: 105%;
+  height: 108rem;
+  width: 100%;
   position: absolute;
   border-radius: 0 0 0 7.5rem;
-  right: -5%;
+  right: 0%;
   top: -8%;
   z-index: -1;
 }
 
-@media (min-width: 765px) {
-  .bgImageIntro::before {
-    height: 110rem;
-  }
-}
-
-@media (min-width: 855px) {
-  .bgImageIntro::before {
-    height: 114rem;
-  }
-}
-
-@media (min-width: 1050px) {
-  .bgImageIntro::before {
-    height: 117rem;
-  }
-}
-
-section.coverIntro {
+.coverIntro {
   padding-top: 11.4rem;
   padding-bottom: 11.4rem;
 }
 
-section.intro > * {
+.aboutmyself section.intro > * {
   margin-bottom: 1.2rem;
 }
 
@@ -111,17 +47,6 @@ section.intro h1 {
 
 section.intro h1 > span {
   flex-basis: 100%;
-}
-
-@media (min-width: 768px) {
-  section.intro h1 > span:nth-of-type(2) {
-    flex-basis: auto;
-    margin-right: 1rem;
-  }
-
-  section.intro h1 > span:nth-of-type(3) {
-    flex-basis: auto;
-  }
 }
 
 section.intro h2 {

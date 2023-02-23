@@ -1,5 +1,7 @@
 @import "globals.css";
+@import "header.css";
 @import "styles.css";
 @import "works.css";
 @import "categories.css";
 @import "contact.css";
+@import "mediaQueries.css";

@@ -1,0 +1,197 @@
+@media (min-width: 399px) {
+  .contact-container::before {
+    background-position: 100% -1%, 24% 8%, 75% 79%;
+    background-size: 31%, 9%, 20%;
+  }
+}
+
+@media (min-width: 495px) {
+  .containerBgImage {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 541px) {
+  .contact-container::before {
+    background-position: 95% 5%, 24% 10%, 75% 79%;
+    background-size: 25%, 6%, 17%;
+  }
+}
+
+@media (min-width: 560px) {
+  .contact-container {
+    padding-bottom: 16rem;
+  }
+
+  .contact-container::before {
+    background-position: 95% 7%, 24% 10%, 73% 76%;
+    background-size: 19%, 5%, 16%;
+  }
+}
+
+@media (min-width: 705px) {
+  .wrapper-contact.container.container > * {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 765px) {
+  .bgImageIntro::before {
+    height: 90rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  .header nav > ul {
+    display: flex;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .wrapper > p {
+    width: inherit;
+    font-size: 1.8rem;
+  }
+
+  section.intro h1 > span:nth-of-type(2) {
+    flex-basis: auto;
+    margin-right: 1rem;
+  }
+
+  section.intro h1 > span:nth-of-type(3) {
+    flex-basis: auto;
+  }
+
+  .works .work-card {
+    flex-direction: row;
+  }
+
+  .works .work-card > * {
+    flex: 1;
+    margin: 0;
+  }
+
+  .work-card .description-card {
+    margin-left: 1.6rem;
+  }
+
+  .work-card:nth-child(2n) .description-card {
+    order: -1;
+    margin-left: 0;
+    margin-right: 1.6rem;
+  }
+
+  .work-card .description-card > * {
+    margin-bottom: 2.4rem;
+  }
+
+  .work-card .description-card > h1 {
+    margin-bottom: 1.2rem;
+  }
+
+  .work-card .description-card .cardbutton {
+    margin-top: 4.2rem;
+  }
+
+  .aboutmyself {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .aboutmyself .intro,
+  .aboutmyself .drop-buttons {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .wrapper-contact.container.container > * {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .contact-container::before {
+    background-image: url("../images/heroDark.png");
+    background-position: 103% 8rem;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 855px) {
+  .bgImageIntro::before {
+    height: 93rem;
+  }
+
+  .works {
+    margin-top: 14.2rem;
+    margin-bottom: 14.2rem;
+  }
+}
+
+@media (min-width: 917px) {
+  .containerBgImage {
+    background-image: url("../images/hero.png");
+    background-size: contain;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .works .work-card .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: inherit;
+  }
+
+  .works .work-card .image > img {
+    width: 140%;
+    max-width: 140%;
+    position: relative;
+    left: -23%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .coverIntro {
+    height: 57rem;
+  }
+
+  .aboutmyself .drop-buttons {
+    flex-grow: 1.5;
+  }
+
+  .wrapper-contact.container.container > * {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .coverIntro {
+    height: 81.6rem;
+  }
+
+  .bgImageIntro::before {
+    height: 115rem;
+  }
+
+  section.intro h1 {
+    font-size: 5rem;
+  }
+
+  .wrapper-contact.container.container > * {
+    width: 55%;
+    margin: 0 auto;
+  }
+}
