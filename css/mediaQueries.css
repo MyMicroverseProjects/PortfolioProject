@@ -1,13 +1,38 @@
+@media (min-width: 399px) {
+  .contact-container::before {
+    background-position: 100% -1%, 24% 8%, 75% 79%;
+    background-size: 31%, 9%, 20%;
+  }
+}
+
 @media (min-width: 495px) {
   .containerBgImage {
     background-size: cover;
   }
 }
 
+@media (min-width: 541px) {
+  .contact-container::before {
+    background-position: 95% 5%, 24% 10%, 75% 79%;
+    background-size: 25%, 6%, 17%;
+  }
+}
+
 @media (min-width: 560px) {
-  .wrapper-contact.container::before {
-    background-position: 100% 0%, 24% 8%, 80% 82%;
-    background-size: 25%, 7%, 22%;
+  .contact-container {
+    padding-bottom: 16rem;
+  }
+
+  .contact-container::before {
+    background-position: 95% 7%, 24% 10%, 73% 76%;
+    background-size: 19%, 5%, 16%;
+  }
+}
+
+@media (min-width: 705px) {
+  .wrapper-contact.container.container > * {
+    width: 85%;
+    margin: 0 auto;
   }
 }
 
