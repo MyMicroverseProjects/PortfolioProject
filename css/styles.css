@@ -7,13 +7,6 @@
   min-height: 4rem;
 }
 
-@media (min-width: 768px) {
-  .header {
-    padding-top: 1.6rem;
-    padding-bottom: 1.6rem;
-  }
-}
-
 .header .logo,
 .header .icon {
   display: flex;
@@ -40,19 +33,6 @@
   border-radius: 0 0 0 7.5rem;
 }
 
-@media (min-width: 495px) {
-  .containerBgImage {
-    background-size: cover;
-  }
-}
-
-@media (min-width: 917px) {
-  .containerBgImage {
-    background-image: url("../images/hero.png");
-    background-size: contain;
-  }
-}
-
 .bgImageIntro {
   position: relative;
 }
@@ -75,48 +55,6 @@
   padding-bottom: 11.4rem;
 }
 
-@media (min-width: 765px) {
-  .bgImageIntro::before {
-    height: 100rem;
-  }
-}
-
-@media (min-width: 855px) {
-  .bgImageIntro::before {
-    height: 102rem;
-  }
-}
-
-@media (min-width: 1048px) {
-  .coverIntro {
-    height: 49rem;
-  }
-
-  .bgImageIntro::before {
-    height: 109rem;
-  }
-}
-
-@media (min-width: 1250px) {
-  .coverIntro {
-    height: 81.6rem;
-  }
-
-  .wrapper {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .wrapper > p {
-    width: inherit;
-    font-size: 1.8rem;
-  }
-
-  .bgImageIntro::before {
-    height: 137rem;
-  }
-}
-
 section.intro > * {
   margin-bottom: 1.2rem;
 }
@@ -132,25 +70,8 @@ section.intro h1 {
   font-size: 4rem;
 }
 
-@media (min-width: 1250px) {
-  section.intro h1 {
-    font-size: 5rem;
-  }
-}
-
 section.intro h1 > span {
   flex-basis: 100%;
-}
-
-@media (min-width: 768px) {
-  section.intro h1 > span:nth-of-type(2) {
-    flex-basis: auto;
-    margin-right: 1rem;
-  }
-
-  section.intro h1 > span:nth-of-type(3) {
-    flex-basis: auto;
-  }
 }
 
 section.intro h2 {
