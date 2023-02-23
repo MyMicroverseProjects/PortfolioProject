@@ -7,6 +7,13 @@
   margin-bottom: 11.4rem;
 }
 
+@media (min-width: 855px) {
+  .works {
+    margin-top: 14.2rem;
+    margin-bottom: 14.2rem;
+  }
+}
+
 .works .work-card {
   padding: 1.6rem;
   background-color: #fff;

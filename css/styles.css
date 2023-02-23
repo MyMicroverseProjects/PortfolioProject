@@ -49,49 +49,72 @@
 @media (min-width: 917px) {
   .containerBgImage {
     background-image: url("../images/hero.png");
+    background-size: contain;
   }
 }
 
 .bgImageIntro {
   position: relative;
-  padding-top: 11.4rem;
-  padding-bottom: 11.4rem;
 }
 
 .bgImageIntro::before {
   content: "";
   display: block;
   background-color: white;
-  height: 117rem;
-  width: 105%;
+  height: 108rem;
+  width: 100%;
   position: absolute;
   border-radius: 0 0 0 7.5rem;
-  right: -5%;
+  right: 0%;
   top: -8%;
   z-index: -1;
 }
 
+.coverIntro {
+  padding-top: 11.4rem;
+  padding-bottom: 11.4rem;
+}
+
 @media (min-width: 765px) {
   .bgImageIntro::before {
-    height: 110rem;
+    height: 100rem;
   }
 }
 
 @media (min-width: 855px) {
   .bgImageIntro::before {
-    height: 114rem;
+    height: 102rem;
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1048px) {
+  .coverIntro {
+    height: 49rem;
+  }
+
   .bgImageIntro::before {
-    height: 117rem;
+    height: 109rem;
   }
 }
 
-section.coverIntro {
-  padding-top: 11.4rem;
-  padding-bottom: 11.4rem;
+@media (min-width: 1250px) {
+  .coverIntro {
+    height: 81.6rem;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .wrapper > p {
+    width: inherit;
+    font-size: 1.8rem;
+  }
+
+  .bgImageIntro::before {
+    height: 137rem;
+  }
 }
 
 section.intro > * {
@@ -107,6 +130,12 @@ section.intro h1 {
   flex-wrap: wrap;
   font-weight: bold;
   font-size: 4rem;
+}
+
+@media (min-width: 1250px) {
+  section.intro h1 {
+    font-size: 5rem;
+  }
 }
 
 section.intro h1 > span {

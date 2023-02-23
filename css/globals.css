@@ -67,6 +67,19 @@ a {
   cursor: pointer;
 }
 
+.btn:active {
+  background-color: #2230d2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: #fff;
+  color: #5e6c84;
+  border-color: #c1c7d0;
+  cursor: pointer;
+}
+
 .bgc-white {
   background-color: white;
 }
