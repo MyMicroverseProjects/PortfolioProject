@@ -5,7 +5,7 @@
 }
 
 @media (min-width: 560px) {
-  .contact-container::before {
+  .wrapper-contact.container::before {
     background-position: 100% 0%, 24% 8%, 80% 82%;
     background-size: 25%, 7%, 22%;
   }
@@ -21,6 +21,14 @@
   .header {
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  .header nav > ul {
+    display: flex;
   }
 
   .wrapper {
@@ -72,6 +80,28 @@
   .work-card .description-card .cardbutton {
     margin-top: 4.2rem;
   }
+
+  .aboutmyself {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .aboutmyself .intro,
+  .aboutmyself .drop-buttons {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .wrapper-contact.container.container > * {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .contact-container::before {
+    background-image: url("../images/heroDark.png");
+    background-position: 100% 0;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 855px) {
@@ -96,6 +126,7 @@
   .works .work-card .image {
     position: relative;
     overflow: hidden;
+    border-radius: inherit;
   }
 
   .works .work-card .image > img {
@@ -114,6 +145,15 @@
   .bgImageIntro::before {
     height: 109rem;
   }
+
+  .aboutmyself .drop-buttons {
+    flex-grow: 1.5;
+  }
+
+  .wrapper-contact.container.container > * {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1250px) {
@@ -127,5 +167,10 @@
 
   section.intro h1 {
     font-size: 5rem;
+  }
+
+  .wrapper-contact.container.container > * {
+    width: 55%;
+    margin: 0 auto;
   }
 }
