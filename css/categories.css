@@ -50,6 +50,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 2.4rem 1.2rem;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.aboutmyself .drop-button:first-child .title {
+  border: none;
 }
 
 .aboutmyself .drop-button .title::after {
@@ -57,9 +62,13 @@
   display: block;
   width: 4rem;
   height: 4rem;
-  background-image: url("../images/dropIconDown.png");
+  background-image: url("../images/dropIconRight.png");
   background-size: 4rem;
   background-repeat: no-repeat;
+}
+
+.aboutmyself .drop-button:first-child .title::after {
+  background-image: url("../images/dropIconDown.png");
 }
 
 .drop-button .extra-menu {

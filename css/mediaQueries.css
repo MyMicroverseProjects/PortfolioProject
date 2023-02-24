@@ -127,6 +127,10 @@
     background-position: 103% 8rem;
     background-size: cover;
   }
+
+  .contact-form .btn {
+    align-self: center;
+  }
 }
 
 @media (min-width: 855px) {
@@ -159,6 +163,24 @@
     max-width: 140%;
     position: relative;
     left: -23%;
+  }
+}
+
+@media (min-width: 956px) {
+  .drop-button .extra-menu {
+    padding: 0 1.2rem;
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  .drop-button .extra-menu > li {
+    flex-direction: column;
+    flex: 1;
+    max-width: 12.2rem;
+    min-height: 12rem;
+    justify-content: center;
+    gap: 1.6rem;
+    align-items: flex-start;
   }
 }
 
