@@ -63,4 +63,9 @@ section.intro .social-media {
 
 section.intro .social-media > * {
   margin-right: 1.9rem;
+  transition: scale 300ms;
+}
+
+section.intro .social-media > *:hover {
+  scale: 1.4;
 }
