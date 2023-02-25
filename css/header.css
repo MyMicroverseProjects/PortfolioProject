@@ -8,6 +8,22 @@
   min-height: 4rem;
 }
 
+.logo {
+  animation: rotate 1.5s ease-in-out;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+
 .header .logo,
 .header .icon {
   display: flex;
@@ -40,4 +56,10 @@
 
 .header nav > ul > *:last-child {
   margin-right: 0;
+}
+
+.menu-icon:hover {
+  transform: scale(1.3);
+  transition-duration: 0.3s;
+  color: red;
 }
