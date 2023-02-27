@@ -166,7 +166,8 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
+You can see the deployment of this project in:
+https://mymicroverseprojects.github.io/PortfolioProject/
 
 <!--
 Example:
