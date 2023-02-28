@@ -1,5 +1,9 @@
 /* HEADER */
 .header {
+  background-color: #fff;
+}
+
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,37 +26,37 @@
   }
 }
 
-.header .logo,
-.header .icon {
+.header-content .logo,
+.header-content .icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header .logo {
+.header-content .logo {
   padding: 1.1rem 1.2rem;
 }
 
-.header .icon {
+.header-content .icon {
   flex-basis: 4rem;
   padding: 0.8rem;
 }
 
-.header nav {
+.header-content nav {
   display: flex;
 }
 
-.header nav > ul {
+.header-content nav > ul {
   display: none;
   color: #344563;
 }
 
-.header nav > ul > * {
+.header-content nav > ul > * {
   margin-right: 0.8rem;
   padding: 1rem 1.2rem;
 }
 
-.header nav > ul > *:last-child {
+.header-content nav > ul > *:last-child {
   margin-right: 0;
 }
 

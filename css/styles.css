@@ -6,24 +6,28 @@
   padding-top: 11.4rem;
   padding-bottom: 11.4rem;
   border-radius: 0 0 0 7.5rem;
+  background-color: #fff;
 }
 
-.bgImageIntro {
-  position: relative;
+.intro > .container {
+  max-width: 97.8rem;
 }
+/* .bgImageIntro { */
+/*   position: relative; */
+/* } */
 
-.bgImageIntro::before {
-  content: "";
-  display: block;
-  background-color: white;
-  height: 108rem;
-  width: 100%;
-  position: absolute;
-  border-radius: 0 0 0 7.5rem;
-  right: 0%;
-  top: -8%;
-  z-index: -1;
-}
+/* .bgImageIntro::before { */
+/*   content: ""; */
+/*   display: block; */
+/*   background-color: white; */
+/*   height: 108rem; */
+/*   width: 100%; */
+/*   position: absolute; */
+/*   border-radius: 0 0 0 7.5rem; */
+/*   right: 0%; */
+/*   top: -8%; */
+/*   z-index: -1; */
+/* } */
 
 .coverIntro {
   padding-top: 11.4rem;
