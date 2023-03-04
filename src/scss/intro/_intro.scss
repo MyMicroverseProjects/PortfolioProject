@@ -1,0 +1,59 @@
+/* MAIN INTRO */
+.containerBgImage {
+  background-image: url("../img/bgCoverM.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 11.4rem;
+  padding-bottom: 11.4rem;
+  border-radius: 0 0 0 7.5rem;
+  background-color: #fff;
+}
+
+.intro > .container {
+  max-width: 97.8rem;
+}
+
+.coverIntro {
+  padding-top: 11.4rem;
+  padding-bottom: 11.4rem;
+}
+
+.aboutmyself section.intro > * {
+  margin-bottom: 1.2rem;
+}
+
+section.intro > *:last-child {
+  margin-bottom: 0;
+}
+
+section.intro h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+section.intro h1 > span {
+  flex-basis: 100%;
+}
+
+section.intro h2 {
+  color: #7f8cff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+section.intro .social-media {
+  display: inline-flex;
+  align-items: center;
+}
+
+section.intro .social-media > * {
+  margin-right: 1.9rem;
+  transition: scale 300ms;
+}
+
+section.intro .social-media > *:hover {
+  scale: 1.4;
+}

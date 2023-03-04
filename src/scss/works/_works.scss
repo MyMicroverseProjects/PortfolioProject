@@ -1,0 +1,82 @@
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8.8rem;
+  justify-content: center;
+  margin-top: 11.4rem;
+  margin-bottom: 11.4rem;
+}
+
+.works .work-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  background-color: #fff;
+  border: 1px #dfe1e6 solid;
+  border-radius: 1.6rem;
+}
+
+.works .work-card > * {
+  margin-bottom: 1.2rem;
+}
+
+.work-card .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.work-card h1 {
+  font-size: 3.2rem;
+  color: #172b4b;
+}
+
+.work-card .extra-info {
+  display: flex;
+  align-items: center;
+}
+
+.work-card .extra-info > span {
+  font-weight: 600;
+  color: #7a869a;
+}
+
+.work-card .extra-info > span:first-of-type {
+  color: #344563;
+  font-weight: 600;
+}
+
+.work-card .extra-info > span:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-card .extra-info > span:nth-of-type(2)::before,
+.work-card .extra-info > span:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 1rem;
+  background-image: url("../img/dot.jpg");
+  background-size: 1rem;
+  background-repeat: no-repeat;
+}
+
+.work-card p {
+  color: #344563;
+}
+
+.work-card ul.tags-group {
+  display: flex;
+  align-items: center;
+}
+
+.work-card ul.tags-group > li {
+  margin-right: 1rem;
+  background-color: #ebebff;
+  color: #6070ff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+}

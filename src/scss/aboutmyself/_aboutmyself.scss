@@ -1,0 +1,27 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.aboutmyself-section {
+  background-color: #fff;
+  border-radius: 0 7.5rem 0 0;
+  translate: 0% 8%;
+  padding-bottom: 19rem;
+
+  @include m.tablet {
+    padding-top: 15rem;
+  }
+}
+
+.aboutmyself {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutmyself > * {
+  flex: 1 1 0;
+}
+
+.aboutmyself .intro {
+  padding-top: 11.4rem;
+}

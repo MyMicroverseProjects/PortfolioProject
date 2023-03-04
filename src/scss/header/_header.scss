@@ -1,0 +1,43 @@
+/* HEADER */
+.header {
+  background-color: #fff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  min-height: 4rem;
+}
+
+.logo {
+  animation: rotate 1.5s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header-content .logo,
+.header-content .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content .logo {
+  padding: 1.1rem 1.2rem;
+}
+
+.header-content .icon {
+  flex-basis: 4rem;
+  padding: 0.8rem;
+}
