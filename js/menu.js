@@ -1,5 +1,5 @@
-let header = document.querySelector(".app-bar");
-let hamburger = document.querySelector("#hamburger");
+let nav = document.querySelector(".menu");
+let hamburger = document.querySelector(".icon img");
 let menu = document.querySelector(".desktop-menu");
 
 hamburger.addEventListener("click", function(event) {
