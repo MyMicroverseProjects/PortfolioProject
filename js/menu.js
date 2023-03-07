@@ -1,25 +1,25 @@
-let nav = document.querySelector(".menu");
-let hamburger = document.querySelector(".icon");
-let ancherTags = document.querySelectorAll(".menu-icon a");
-let mediaQuery = window.matchMedia("(max-width: 768px)");
+const nav = document.querySelector('.menu');
+const hamburger = document.querySelector('.icon');
+const ancherTags = document.querySelectorAll('.menu-icon a');
+const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-hamburger.addEventListener("click", function(event) {
+function toggleReveal() {
+  hamburger.classList.toggle('reveal');
+  nav.classList.toggle('reveal');
+}
+
+hamburger.addEventListener('click', (event) => {
   event.stopPropagation();
-  if(mediaQuery.matches) {
+  if (mediaQuery.matches) {
     toggleReveal();
   }
 });
 
-for( let a of ancherTags ) {
-  a.addEventListener("click", function(event) {
+ancherTags.forEach((a) => {
+  a.addEventListener('click', (event) => {
     event.stopPropagation();
-  if(mediaQuery.matches) {
-    toggleReveal();
-  }
+    if (mediaQuery.matches) {
+      toggleReveal();
+    }
   });
-}
-
-function toggleReveal() {
-  hamburger.classList.toggle("reveal");
-  nav.classList.toggle("reveal");
-}
+});
