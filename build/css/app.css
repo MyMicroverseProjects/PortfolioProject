@@ -366,6 +366,7 @@ template {
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1REM = 10px */
+  scroll-behavior: smooth;
 }
 
 *,
