@@ -55,21 +55,7 @@ More Information about the instructions on https://github.com/microverseinc/curr
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://gulpjs.com/">Gulp</a></li>
   </ul>
 </details>
 
@@ -79,7 +65,8 @@ More Information about the instructions on https://github.com/microverseinc/curr
 
 - **[Made by Following the Mobile First Design]**
 - **[Made by parsing a Figma desing to create the UI]**
-- **[it has installed the required dependencies to make the linter for html and css to work properly]**
+- **[it has installed the required dependencies to make the linter for html, javascript and css to work properly]**
+- **[Add Javacript for menu in mobile]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +74,7 @@ More Information about the instructions on https://github.com/microverseinc/curr
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/MyMicroverseProjects/PortfolioProject)
+- [Live Demo Link](https://mymicroverseprojects.github.io/PortfolioProject/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
