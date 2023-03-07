@@ -73,7 +73,7 @@ More Information about the instructions on https://github.com/microverseinc/curr
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/MyMicroverseProjects/PortfolioProject)
+- [Live Demo Link](https://mymicroverseprojects.github.io/PortfolioProject/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
