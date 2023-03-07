@@ -199,6 +199,8 @@ a {
   right: 0;
   top: 0;
   background-color: rgba(96, 112, 255, 0.9294117647);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
 }
 .menu.reveal ul {
   width: 90%;
