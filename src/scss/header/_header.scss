@@ -1,6 +1,9 @@
 /* HEADER */
 .header {
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 .header-content {
@@ -40,4 +43,12 @@
 .header-content .icon {
   flex-basis: 4rem;
   padding: 0.8rem;
+  z-index: 1;
+  background-image: url("../img/hamburguer.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header-content .icon.reveal {
+  background-image: url("../img/close.svg");
 }
