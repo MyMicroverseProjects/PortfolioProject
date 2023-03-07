@@ -66,6 +66,7 @@ More Information about the instructions on https://github.com/microverseinc/curr
 - **[Made by Following the Mobile First Design]**
 - **[Made by parsing a Figma desing to create the UI]**
 - **[it has installed the required dependencies to make the linter for html, javascript and css to work properly]**
+- **[Add Javacript for menu in mobile]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
