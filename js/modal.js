@@ -51,3 +51,29 @@ Cards.forEach((card) => {
     porfolio.innerHTML += createCard(card);
   });
   
+  const CardButtons = document.body.querySelectorAll('.work-card .btn');
+  
+  CardButtons.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+  
+      const modal = document.createElement('section');
+      const card = document.querySelector('.work-card');
+      const cardImage = document.querySelector('.work-card .image');
+      // change the position of the title
+      const title = document.querySelector('.work-card h1');
+      title.parentNode.removeChild(title);
+      card.insertBefore(title, cardImage);
+  
+      // change the position of the extra-information
+      const extraInfo = document.querySelector('.work-card .extra-info');
+      extraInfo.parentNode.removeChild(extraInfo);
+      card.insertBefore(extraInfo, cardImage);
+  
+      modal.append(card);
+      modal.classList.add('modal');
+      modal.classList.add('works');
+      document.body.append(modal);
+    });
+  });
