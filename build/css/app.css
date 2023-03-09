@@ -376,19 +376,26 @@ section.intro .social-media > *:hover {
   z-index: 4;
   top: 0;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 2% 4%;
 }
 .modal.works .work-card {
   margin: 0 auto;
-  min-height: 71.3rem;
   position: relative;
   flex-direction: column;
   width: 80%;
 }
+.modal.works .work-card .image {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.modal.works .work-card .image img {
+  width: 100%;
+  left: 0;
+}
 .modal.works .work-card .description-card {
   max-width: 110.8rem;
   max-height: 58.6rem;
-  margin: 5rem 0;
+  margin: 1rem 0;
 }
 @media (min-width: 768px) {
   .modal.works .work-card .description-card {
@@ -412,13 +419,28 @@ section.intro .social-media > *:hover {
 }
 .modal.works .work-card .description-card p {
   overflow: hidden;
-  max-height: 22rem;
+  max-height: 5rem;
+}
+@media (min-width: 384px) {
+  .modal.works .work-card .description-card p {
+    max-height: 10rem;
+  }
 }
 @media (min-width: 768px) {
   .modal.works .work-card .description-card p {
     grid-column: 1/3;
     grid-row: 1/3;
     margin: 0;
+  }
+}
+@media (min-width: 1450px) {
+  .modal.works .work-card .description-card p {
+    max-height: 12rem;
+  }
+}
+@media (min-width: 1650px) {
+  .modal.works .work-card .description-card p {
+    max-height: 22rem;
   }
 }
 .modal.works .work-card .crossIcon {
