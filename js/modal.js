@@ -59,23 +59,31 @@ CardButtons.forEach((btn) => {
     event.stopPropagation();
     event.preventDefault();
     // Use the button to get the card elements relative to it
-    const targetButton = event.target;
+    const originalButton = event.target;
 
     const modal = document.createElement('section');
-    const card = targetButton.parentNode.parentNode.parentNode;
+    const originalCard = originalButton.parentNode.parentNode.parentNode;
+
+    // Create a copy of the Card, otherwise the clone button will delete the original card
+    const card = originalCard.cloneNode(true);
+    // Look for the copy version of the button for relative references.
+    const targetButton = card.querySelector('.btn');
     const cardImage = card.firstElementChild;
     // change the position of the title
     const title = targetButton.parentNode.parentNode.firstElementChild;
+    // const title = card.querySelector('.description-card h1');
     title.parentNode.removeChild(title);
     card.insertBefore(title, cardImage);
 
     // change the position of the extra-information
     const extraInfo = targetButton.parentNode.parentNode.firstElementChild;
+    // const extraInfo = card.querySelector('.extra-info');
     extraInfo.parentNode.removeChild(extraInfo);
     card.insertBefore(extraInfo, cardImage);
 
     // Increase the paragraph size to looks a bit more lenghty like in the template
     const paragraph = targetButton.parentNode.parentNode.firstElementChild;
+    // const paragraph = card.querySelector('.description-card p');
     paragraph.textContent = paragraph.textContent.repeat(3);
 
     // Create close Icon
