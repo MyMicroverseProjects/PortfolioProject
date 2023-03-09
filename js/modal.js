@@ -74,8 +74,19 @@ CardButtons.forEach((btn) => {
     extraInfo.parentNode.removeChild(extraInfo);
     card.insertBefore(extraInfo, cardImage);
 
+    // Increase the paragraph size to looks a bit more lenghty like in the template
     const paragraph = targetButton.parentNode.parentNode.firstElementChild;
     paragraph.textContent = paragraph.textContent.repeat(3);
+
+    // Create close Icon
+    const close = document.createElement('div');
+    close.classList.add('crossIcon');
+    close.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      document.body.removeChild(document.body.querySelector('.modal'));
+    });
+    title.append(close);
 
     modal.append(card);
     modal.classList.add('modal');
