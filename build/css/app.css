@@ -365,6 +365,40 @@ section.intro .social-media > *:hover {
   border-radius: 0.8rem;
 }
 
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #f00;
+  display: block;
+  z-index: 4;
+  top: 0;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+.modal .cardbutton {
+  display: flex;
+  align-items: center;
+}
+.modal .cardbutton:first-child {
+  display: none;
+}
+.modal .cardbutton .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.2rem;
+  padding: 1.2rem 2.2rem;
+  line-height: 1;
+}
+.modal .cardbutton .btn:first-of-type {
+  display: none;
+}
+.modal .cardbutton .btn .btnIcon {
+  display: inline;
+  margin-left: 1rem;
+}
+
 .aboutmyself-section {
   background-color: #fff;
   border-radius: 0 7.5rem 0 0;
