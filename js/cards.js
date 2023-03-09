@@ -9,6 +9,8 @@ const Cards = [
       extraInfo: 'Canopy.Back End Dev.2015',
       paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       technologies: 'html.css.javascript',
+      live: '',
+      source: '',
     },
   },
   {
@@ -21,6 +23,8 @@ const Cards = [
       extraInfo: 'Canopy.Back End Dev.2015',
       paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       technologies: 'html.css.javascript',
+      live: '',
+      source: '',
     },
   },
   {
@@ -33,6 +37,8 @@ const Cards = [
       extraInfo: 'Canopy.Back End Dev.2015',
       paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       technologies: 'html.css.javascript',
+      live: '',
+      source: '',
     },
   },
   {
@@ -45,6 +51,8 @@ const Cards = [
       extraInfo: 'Canopy.Back End Dev.2015',
       paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       technologies: 'html.css.javascript',
+      live: '',
+      source: '',
     },
   },
 ];
