@@ -2,7 +2,8 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: #f00;
+  background-color: #C1C7D085;
+  backdrop-filter: blur(0.5rem);
   display: block;
   z-index: 4;
   top: 0;
@@ -12,6 +13,12 @@
   .work-card {
     margin: 0 auto;
     min-height: 71.3rem;
+
+    .description-card {
+      .tags-group{
+        margin-top: 2rem;
+      }
+    }
   }
 
   .cardbutton {

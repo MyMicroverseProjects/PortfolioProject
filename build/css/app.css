@@ -369,7 +369,9 @@ section.intro .social-media > *:hover {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: #f00;
+  background-color: rgba(193, 199, 208, 0.5215686275);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
   display: block;
   z-index: 4;
   top: 0;
@@ -379,6 +381,9 @@ section.intro .social-media > *:hover {
 .modal .work-card {
   margin: 0 auto;
   min-height: 71.3rem;
+}
+.modal .work-card .description-card .tags-group {
+  margin-top: 2rem;
 }
 .modal .cardbutton {
   display: flex;

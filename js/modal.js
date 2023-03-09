@@ -74,6 +74,9 @@ CardButtons.forEach((btn) => {
     extraInfo.parentNode.removeChild(extraInfo);
     card.insertBefore(extraInfo, cardImage);
 
+    const paragraph = targetButton.parentNode.parentNode.firstElementChild;
+    paragraph.textContent = paragraph.textContent.repeat(3);
+
     modal.append(card);
     modal.classList.add('modal');
     modal.classList.add('works');
