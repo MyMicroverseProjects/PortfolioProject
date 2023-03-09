@@ -64,7 +64,7 @@ CardButtons.forEach((btn) => {
     const modal = document.createElement('section');
     const originalCard = originalButton.parentNode.parentNode.parentNode;
 
-    // Create a copy of the Card, otherwise the clone button will delete the original card
+    // Create a copy of the Card, otherwise the close button will delete the original card
     const card = originalCard.cloneNode(true);
     const cardImage = card.firstElementChild;
     // change the position of the title
