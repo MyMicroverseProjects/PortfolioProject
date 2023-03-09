@@ -51,23 +51,26 @@ Cards.forEach((card) => {
   porfolio.innerHTML += createCard(card);
 });
 
+// Add funtionality to the card button
 const CardButtons = document.body.querySelectorAll('.work-card .btn');
 
 CardButtons.forEach((btn) => {
   btn.addEventListener('click', (event) => {
     event.stopPropagation();
     event.preventDefault();
+    // Use the button to get the card elements relative to it
+    const targetButton = event.target;
 
     const modal = document.createElement('section');
-    const card = document.querySelector('.work-card');
-    const cardImage = document.querySelector('.work-card .image');
+    const card = targetButton.parentNode.parentNode.parentNode;
+    const cardImage = card.firstElementChild;
     // change the position of the title
-    const title = document.querySelector('.work-card h1');
+    const title = targetButton.parentNode.parentNode.firstElementChild;
     title.parentNode.removeChild(title);
     card.insertBefore(title, cardImage);
 
     // change the position of the extra-information
-    const extraInfo = document.querySelector('.work-card .extra-info');
+    const extraInfo = targetButton.parentNode.parentNode.firstElementChild;
     extraInfo.parentNode.removeChild(extraInfo);
     card.insertBefore(extraInfo, cardImage);
 
