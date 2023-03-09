@@ -41,7 +41,7 @@ const Cards = [
       alt: 'Fourth project',
     },
     description: {
-      title: 'Tonic',
+      title: 'Multi-Post Stories',
       extraInfo: 'Canopy.Back End Dev.2015',
       paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       technologies: 'html.css.javascript',
