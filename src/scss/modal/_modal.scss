@@ -1,4 +1,7 @@
-.modal {
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.modal.works {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -14,10 +17,42 @@
     margin: 0 auto;
     min-height: 71.3rem;
     position: relative;
+    flex-direction: column;
+    width: 80%;
 
     .description-card {
+      max-width: 110.8rem;
+      max-height: 58.6rem;
+      margin: 5rem 0;
+
+      @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 25% 1fr;
+        margin-left: 0;
+        gap: 2rem;
+      }
+
       .tags-group {
-        margin-top: 2rem;
+        border-bottom: 1px #ccc solid;
+        padding-bottom: 2rem;
+
+        @include m.tablet {
+          grid-column: 3 / 4;
+          align-items: flex-start;
+          margin: 0;
+        }
+      }
+
+      p {
+        overflow: hidden;
+        max-height: 22rem;
+
+        @include m.tablet {
+          grid-column: 1 / 3;
+          grid-row: 1 / 3;
+          margin: 0;
+        }
       }
     }
 
@@ -36,12 +71,23 @@
       background-repeat: no-repeat;
     }
 
+    @include m.tablet {
+      max-width: 115.6rem;
+      max-height: 116.3rem;
+    }
   }
 
   .cardbutton {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include m.tablet {
+      grid-column: 3/4;
+      margin: 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
 
     &:first-child {
       display: none;
@@ -65,5 +111,16 @@
         margin-left: 1rem;
       }
     }
+  }
+}
+
+// Rewrite Images max size and width
+.image {
+  max-width: 110.8rem;
+  max-height: 58.6rem;
+
+  img {
+    max-width: 110.8rem;
+    max-height: 58.6rem;
   }
 }

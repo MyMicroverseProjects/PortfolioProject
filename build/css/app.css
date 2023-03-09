@@ -365,7 +365,7 @@ section.intro .social-media > *:hover {
   border-radius: 0.8rem;
 }
 
-.modal {
+.modal.works {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -378,15 +378,50 @@ section.intro .social-media > *:hover {
   margin: 0 auto;
   padding: 4rem 2rem;
 }
-.modal .work-card {
+.modal.works .work-card {
   margin: 0 auto;
   min-height: 71.3rem;
   position: relative;
+  flex-direction: column;
+  width: 80%;
 }
-.modal .work-card .description-card .tags-group {
-  margin-top: 2rem;
+.modal.works .work-card .description-card {
+  max-width: 110.8rem;
+  max-height: 58.6rem;
+  margin: 5rem 0;
 }
-.modal .work-card .crossIcon {
+@media (min-width: 768px) {
+  .modal.works .work-card .description-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25% 1fr;
+    margin-left: 0;
+    gap: 2rem;
+  }
+}
+.modal.works .work-card .description-card .tags-group {
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .modal.works .work-card .description-card .tags-group {
+    grid-column: 3/4;
+    align-items: flex-start;
+    margin: 0;
+  }
+}
+.modal.works .work-card .description-card p {
+  overflow: hidden;
+  max-height: 22rem;
+}
+@media (min-width: 768px) {
+  .modal.works .work-card .description-card p {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    margin: 0;
+  }
+}
+.modal.works .work-card .crossIcon {
   content: "";
   display: block;
   position: absolute;
@@ -399,15 +434,29 @@ section.intro .social-media > *:hover {
   background-size: 3rem;
   background-repeat: no-repeat;
 }
-.modal .cardbutton {
+@media (min-width: 768px) {
+  .modal.works .work-card {
+    max-width: 115.6rem;
+    max-height: 116.3rem;
+  }
+}
+.modal.works .cardbutton {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.modal .cardbutton:first-child {
+@media (min-width: 768px) {
+  .modal.works .cardbutton {
+    grid-column: 3/4;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.modal.works .cardbutton:first-child {
   display: none;
 }
-.modal .cardbutton .btn {
+.modal.works .cardbutton .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,12 +465,21 @@ section.intro .social-media > *:hover {
   line-height: 1;
   font-size: 1.5rem;
 }
-.modal .cardbutton .btn:first-of-type {
+.modal.works .cardbutton .btn:first-of-type {
   display: none;
 }
-.modal .cardbutton .btn .btnIcon {
+.modal.works .cardbutton .btn .btnIcon {
   display: inline;
   margin-left: 1rem;
+}
+
+.image {
+  max-width: 110.8rem;
+  max-height: 58.6rem;
+}
+.image img {
+  max-width: 110.8rem;
+  max-height: 58.6rem;
 }
 
 .aboutmyself-section {
@@ -696,7 +754,7 @@ section.intro .social-media > *:hover {
   .work-card .description-card > h1 {
     margin-bottom: 1.2rem;
   }
-  .work-card .description-card .cardbutton {
+  .description-card .cardbutton {
     margin-top: 4.2rem;
   }
   .aboutmyself {

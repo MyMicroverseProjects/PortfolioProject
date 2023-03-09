@@ -32,11 +32,11 @@ function createCard(card) {
 
                         <div class="mt-2 cardbutton">
                             <a class="btn" disabled href="#">See Project</a>
-                            <a class="btn hidden" disabled href="#">
+                            <a class="btn hidden" disabled href="${card.description.live}">
                                <span>See live</span>
                                <img class="btnIcon" src="build/img/live.svg" alt="live icon" />
                             </a>
-                            <a class="btn hidden" disabled href="#">
+                            <a class="btn hidden" disabled href="${card.description.source}">
                                <span>See Source</span>
                                <img class="btnIcon" src="build/img/source.svg" alt="live icon" />
                             </a>
@@ -79,7 +79,7 @@ CardButtons.forEach((btn) => {
 
     // Increase the paragraph size to looks a bit more lenghty like in the template
     const paragraph = card.querySelector('.description-card p');
-    paragraph.textContent = paragraph.textContent.repeat(3);
+    paragraph.textContent = paragraph.textContent.repeat(9);
 
     // Create close Icon
     const close = document.createElement('div');
