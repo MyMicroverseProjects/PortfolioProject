@@ -66,7 +66,6 @@ CardButtons.forEach((btn) => {
 
     // Create a copy of the Card, otherwise the clone button will delete the original card
     const card = originalCard.cloneNode(true);
-    // Look for the copy version of the button for relative references.
     const cardImage = card.firstElementChild;
     // change the position of the title
     const title = card.querySelector('.description-card h1');
