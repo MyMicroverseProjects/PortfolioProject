@@ -9,9 +9,15 @@
   margin: 0 auto;
   padding: 4rem 2rem;
 
+  .work-card {
+    margin: 0 auto;
+    min-height: 71.3rem;
+  }
+
   .cardbutton {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &:first-child {
       display: none;
@@ -24,6 +30,7 @@
       margin-right: 1.2rem;
       padding: 1.2rem 2.2rem;
       line-height: 1;
+      font-size: 1.5rem;
 
       &:first-of-type {
         display: none;

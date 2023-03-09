@@ -376,9 +376,14 @@ section.intro .social-media > *:hover {
   margin: 0 auto;
   padding: 4rem 2rem;
 }
+.modal .work-card {
+  margin: 0 auto;
+  min-height: 71.3rem;
+}
 .modal .cardbutton {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .modal .cardbutton:first-child {
   display: none;
@@ -390,6 +395,7 @@ section.intro .social-media > *:hover {
   margin-right: 1.2rem;
   padding: 1.2rem 2.2rem;
   line-height: 1;
+  font-size: 1.5rem;
 }
 .modal .cardbutton .btn:first-of-type {
   display: none;
