@@ -365,6 +365,15 @@ section.intro .social-media > *:hover {
   border-radius: 0.8rem;
 }
 
+.image {
+  max-width: 110.8rem;
+  max-height: 58.6rem;
+}
+.image img {
+  max-width: 110.8rem;
+  max-height: 58.6rem;
+}
+
 .modal.works {
   width: 100vw;
   height: 100vh;
@@ -493,15 +502,6 @@ section.intro .social-media > *:hover {
 .modal.works .cardbutton .btn .btnIcon {
   display: inline;
   margin-left: 1rem;
-}
-
-.image {
-  max-width: 110.8rem;
-  max-height: 58.6rem;
-}
-.image img {
-  max-width: 110.8rem;
-  max-height: 58.6rem;
 }
 
 .aboutmyself-section {

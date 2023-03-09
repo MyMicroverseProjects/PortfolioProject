@@ -1,6 +1,17 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
+// Rewrite Images max size and width
+.image {
+  max-width: 110.8rem;
+  max-height: 58.6rem;
+
+  img {
+    max-width: 110.8rem;
+    max-height: 58.6rem;
+  }
+}
+
 .modal.works {
   width: 100vw;
   height: 100vh;
@@ -132,16 +143,5 @@
         margin-left: 1rem;
       }
     }
-  }
-}
-
-// Rewrite Images max size and width
-.image {
-  max-width: 110.8rem;
-  max-height: 58.6rem;
-
-  img {
-    max-width: 110.8rem;
-    max-height: 58.6rem;
   }
 }
