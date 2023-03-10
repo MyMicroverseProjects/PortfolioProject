@@ -1,5 +1,17 @@
 const myForm = document.body.querySelector('.contact-form');
 
+function errorMessage(message) {
+  const displayError = document.createElement('p');
+  displayError.textContent = message;
+  displayError.classList.add('formError');
+  myForm.parentNode.append(displayError);
+
+  // Remove the message after 3 seconds
+  setTimeout(() => {
+    displayError.remove();
+  }, 3000);
+}
+
 function validate() {
   const upperCaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
