@@ -19,8 +19,7 @@ function validate() {
   const emailContent = inputEmail.value.trim();
 
   if (emailContent === '') {
-    // errorMessage('Please, write your email');
-    console.log('you should write your email');
+    errorMessage('Please, write your email');
     return false;
   }
 
@@ -34,8 +33,7 @@ function validate() {
   }
 
   if (containUpperCase) {
-    // errorMessage('Email should not contain UpperCase letters');
-    console.log('no upper case!');
+    errorMessage('Email should not contain UpperCase letters');
     return false;
   }
 
@@ -46,8 +44,7 @@ myForm.addEventListener('submit', (event) => {
   // Prevent form submision
   event.preventDefault();
 
-  console.log(validate());
-  // if (validate()) {
-  //   myForm.submit();
-  // }
+  if (validate()) {
+    myForm.submit();
+  }
 });
