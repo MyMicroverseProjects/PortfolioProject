@@ -43,8 +43,25 @@ function validate() {
 myForm.addEventListener('submit', (event) => {
   // Prevent form submision
   event.preventDefault();
+  const name = myForm.querySelector('input[type="text"]').value.trim();
+  const email = myForm.querySelector('input[type="email"]').value.trim();
+  const message = myForm.querySelector('textarea[name="message"]').value.trim();
+
+  const userFormData = {};
+  userFormData.name = name;
+  userFormData.email = email;
+  userFormData.message = message;
+
+  localStorage.setItem('userFormData', JSON.stringify(userFormData));
 
   if (validate()) {
     myForm.submit();
   }
+
+  myForm.reset();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const userFormData = JSON.parse(localStorage.getItem('userFormData')) || {};
+  console.log(userFormData?.name || '');
 });
