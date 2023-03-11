@@ -66,8 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const userFormData = JSON.parse(localStorage.getItem('userFormData')) || {};
 
   // Once the object is retrieved, then I use its values to insert the them in the values
-  // If the object is empty then instead of undefined I force the result to be an empty string
+  // If the object is empty then instead of undefined I force the result to be an empty string by using the OR operator
   myForm.querySelector('input[type="text"]').value = userFormData?.name || '';
   myForm.querySelector('input[type="email"]').value = userFormData?.email || '';
   myForm.querySelector('textarea[name="message"]').value = userFormData?.message || '';
+
 });
