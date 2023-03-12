@@ -87,13 +87,15 @@ CardButtons.forEach((btn) => {
     close.addEventListener('click', (e) => {
       e.stopPropagation();
       e.preventDefault();
+      document.body.classList.remove('modaltime');
       document.body.removeChild(document.body.querySelector('.modal'));
     });
-    title.append(close);
 
+    title.append(close);
     modal.append(card);
     modal.classList.add('modal');
     modal.classList.add('works');
     document.body.append(modal);
+    document.body.classList.add('modaltime');
   });
 });

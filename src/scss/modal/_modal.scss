@@ -12,6 +12,10 @@
   }
 }
 
+.modaltime {
+  overflow: hidden;
+}
+
 .modal.works {
   width: 100vw;
   height: 100vh;
@@ -23,6 +27,7 @@
   top: 0;
   margin: 0 auto;
   padding: 2% 4%;
+  overflow: scroll;
 
   .work-card {
     margin: 0 auto;
