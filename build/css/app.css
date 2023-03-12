@@ -374,6 +374,10 @@ section.intro .social-media > *:hover {
   max-height: 58.6rem;
 }
 
+.modaltime {
+  overflow: hidden;
+}
+
 .modal.works {
   width: 100vw;
   height: 100vh;
@@ -386,6 +390,7 @@ section.intro .social-media > *:hover {
   top: 0;
   margin: 0 auto;
   padding: 2% 4%;
+  overflow: scroll;
 }
 .modal.works .work-card {
   margin: 0 auto;
