@@ -69,12 +69,12 @@ CardButtons.forEach((btn) => {
     const cardImage = card.firstElementChild;
     // change the position of the title
     const title = card.querySelector('.description-card h1');
-    title.parentNode.removeChild(title);
+    title.remove();
     card.insertBefore(title, cardImage);
 
     // change the position of the extra-information
     const extraInfo = card.querySelector('.extra-info');
-    extraInfo.parentNode.removeChild(extraInfo);
+    extraInfo.remove();
     card.insertBefore(extraInfo, cardImage);
 
     // Increase the paragraph size to looks a bit more lenghty like in the template
@@ -88,7 +88,7 @@ CardButtons.forEach((btn) => {
       e.stopPropagation();
       e.preventDefault();
       document.body.classList.remove('modaltime');
-      document.body.removeChild(document.body.querySelector('.modal'));
+      modal.remove();
     });
 
     title.append(close);
